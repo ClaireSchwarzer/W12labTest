@@ -15,7 +15,7 @@ public class ApplicationIntegrationTests {//
     //finish github workflows.
     @Autowired
     private TestRestTemplate restTemplate;
-
+//
     @Test
     public void doubleNumberEndpointShouldReturnDoubledValue() {
         ResponseEntity<String> response = restTemplate.getForEntity("/double?number=3", String.class);
